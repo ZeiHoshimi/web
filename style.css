@@ -127,6 +127,10 @@
             border-radius: 8px;
             cursor: pointer;
             transition: 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            animation: floatBtn 3s ease-in-out infinite;
         }
 
         .hero button:hover {
@@ -135,16 +139,18 @@
             box-shadow: 0 0 15px var(--accent);
         }
 
-        .hero h2 {
-            font-size: 3rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
+        @keyframes floatBtn {
+            0% {
+                transform: translateY(0);
+            }
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #ddd;
-            line-height: 1.6;
+            50% {
+                transform: translateY(-2px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }
 
         .content-home button {
