@@ -347,8 +347,14 @@
         }
 
         .timeline-block {
-            grid-template-columns: 1fr;
-            text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        position: relative;
+         margin: 3rem 0;
+        z-index: 2;
         }
 
         .timeline-circle {
