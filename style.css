@@ -220,11 +220,10 @@ header h1 {
 .timeline::before {
   content: "";
   position: absolute;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
-  height: 100%;
+  height: 87%;
   background: var(--accent);
   z-index: 1;
 }
@@ -296,7 +295,7 @@ header h1 {
 
   .timeline::before {
     left: 50%;
-    height: 90%;
+    height: 89%;
   }
 
   .content {
