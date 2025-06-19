@@ -313,5 +313,6 @@ header h1 {
 
   .timeline::before {
     left: 50%;
+    height: 87%;
   }
 }
